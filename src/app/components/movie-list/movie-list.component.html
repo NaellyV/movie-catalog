@@ -1,0 +1,25 @@
+<input 
+  type="text" 
+  placeholder="Pesquisar filmes..." 
+  [(ngModel)]="searchTerm" 
+  (ngModelChange)="search()"
+>
+<div class="movies-container">
+  <ul>
+      <li *ngFor="let movie of filteredMovies" [ngClass]="{ 'favorite': movie.isFavorite }">
+        <div class="card-movie">
+          <img [src]="movie.poster" alt="{{ movie.title }}">
+          <div class="card-descripition">
+            <h3>{{ movie.title }} ({{ movie.year }})</h3>
+            <button (click)="toggleFavorite(movie)">
+              {{ movie.isFavorite ? '❤️ Remover' : '🤍 Favoritar' }}
+            </button>
+          </div>
+        </div>
+      </li>
+  </ul>
+</div>
+
+
+
+  
