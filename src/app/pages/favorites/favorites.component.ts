@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { MovieListComponent } from '../../components/movie-list/movie-list.component';
+import { FavComponent } from '../../components/fav/fav.component';
 
 @Component({
   selector: 'app-favorites',
-  imports: [],
-  templateUrl: './favorites.component.html',
+  imports: [FavComponent],
+  template: `
+  <app-fav></app-fav>
+   `,
   styleUrl: './favorites.component.scss'
 })
 export class FavoritesComponent {

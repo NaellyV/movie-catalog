@@ -1,0 +1,40 @@
+.movies-container {
+    gap: 30px;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  
+.movie-item {
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.card-movie {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; 
+    color: #f2f2f2;
+}
+  
+.card-descripition {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+    flex-grow: 1;
+}
+  
+img {
+    width: 150px; 
+    height: 225px; 
+    border-radius: 5px;
+    object-fit: cover; 
+}

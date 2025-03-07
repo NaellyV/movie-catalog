@@ -20,7 +20,6 @@ export class MovieListComponent implements OnInit {
     this.filteredMovies = this.movieService.getMovies();
   }
 
-  // biome-ignore lint/suspicious/noExplicitAny: <explanation>
   toggleFavorite(movie: any) {
     this.movieService.toggleFavorite(movie);
   }
@@ -30,4 +29,5 @@ export class MovieListComponent implements OnInit {
       movie.title.toLowerCase().includes(this.searchTerm.toLowerCase())
     );
   }
+
 }

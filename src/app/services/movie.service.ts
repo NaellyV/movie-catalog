@@ -23,7 +23,6 @@ export class MovieService {
     return this.movies;
   }
 
-  // biome-ignore lint/suspicious/noExplicitAny: <explanation>
   toggleFavorite(movie: any) {
     movie.isFavorite = !movie.isFavorite;
   }
