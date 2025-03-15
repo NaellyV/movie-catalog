@@ -4,6 +4,11 @@
   [(ngModel)]="searchTerm" 
   (ngModelChange)="search()"
 >
+
+<div *ngIf="filteredMovies.length === 0" class="card-movie">
+  <p>Nenhum filme encontrado!</p>
+</div>
+
 <div class="movies-container">
   <ul>
     <li *ngFor="let movie of filteredMovies; trackBy: trackByMovie" [ngClass]="{ 'favorite': movie.isFavorite }">

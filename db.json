@@ -1,0 +1,102 @@
+{
+  "movies": [
+    {
+      "id": "1",
+      "title": "Oppenheimer",
+      "year": 2023,
+      "isFavorite": false,
+      "poster": "assets/images/openheimer.jpeg"
+    },
+    {
+      "id": "2",
+      "title": "Interestelar",
+      "year": 2014,
+      "isFavorite": false,
+      "poster": "assets/images/interestelar.jpg"
+    },
+    {
+      "id": "3",
+      "title": "Central do Brasil",
+      "year": 1998,
+      "isFavorite": false,
+      "poster": "assets/images/centraldobrasil.jpg"
+    },
+    {
+      "id": "4",
+      "title": "A Origem",
+      "year": 2010,
+      "isFavorite": false,
+      "poster": "assets/images/origem.jpg"
+    },
+    {
+      "id": "5",
+      "title": "Clube da Luta",
+      "year": 1999,
+      "isFavorite": false,
+      "poster": "assets/images/clube-da-luta.jpeg"
+    },
+    {
+      "id": "6",
+      "title": "Vingadores: Ultimato",
+      "year": 2019,
+      "isFavorite": false,
+      "poster": "assets/images/vingadores-ultimato.jpeg"
+    },
+    {
+      "id": "7",
+      "title": "Pulp Fiction",
+      "year": 1994,
+      "isFavorite": false,
+      "poster": "assets/images/pulpfiction.jpg"
+    },
+    {
+      "id": "8",
+      "title": "Coringa",
+      "year": 2019,
+      "isFavorite": false,
+      "poster": "assets/images/coringa.jpg"
+    },
+    {
+      "id": "9",
+      "title": "O Senhor dos Anéis: O Retorno do Rei",
+      "year": 2003,
+      "isFavorite": false,
+      "poster": "assets/images/senhor-dos-aneis.jpg"
+    },
+    {
+      "id": "10",
+      "title": "Matrix",
+      "year": 1999,
+      "isFavorite": false,
+      "poster": "assets/images/matrix.jpg"
+    },
+    {
+      "id": "11",
+      "title": "Django Livre",
+      "year": 2012,
+      "isFavorite": false,
+      "poster": "assets/images/django.jpg"
+    },
+    {
+      "id": "12",
+      "title": "Cidade de Deus",
+      "year": 2002,
+      "isFavorite": false,
+      "poster": "assets/images/cidade-de-deus.jpg"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "email": "admin@email.com",
+      "password": "123456",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "email": "user@email.com",
+      "password": "123456",
+      "role": "user"
+    }
+  ]
+}

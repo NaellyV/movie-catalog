@@ -58,7 +58,7 @@ img {
   height: 225px;
   border-radius: 5px;
   object-fit: cover;
-  flex-shrink: 0; // Evita que as imagens diminuam
+  flex-shrink: 0; 
 }
 
 .favorite {
@@ -90,7 +90,7 @@ button {
   background-color: #00A8E8;
   color: white;
   border: none;
-  flex-shrink: 0; // Evita que o botão diminua
+  flex-shrink: 0;
 }
 
 button:hover {

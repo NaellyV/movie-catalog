@@ -5,17 +5,31 @@ import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-fav',
+  standalone: true,
   imports: [CommonModule, FormsModule],
   templateUrl: './fav.component.html',
-  styleUrl: './fav.component.scss'
+  styleUrls: ['./fav.component.scss']
 })
-export class FavComponent implements OnInit{
+export class FavComponent implements OnInit {
   favoriteMovies: any[] = [];
-  
+
   constructor(private movieService: MovieService) {}
 
   ngOnInit(): void {
-    this.favoriteMovies = this.movieService.getFavorites();
+    this.loadFavorites();
   }
- 
+
+  loadFavorites(): void {
+    this.movieService.getFavorites().subscribe(
+      (favorites) => {
+        this.favoriteMovies = favorites;
+      
+      },
+      
+    );
+  }
+
+  
+
+  
 }
